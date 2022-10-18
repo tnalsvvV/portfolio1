@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="script/js.js"></script>
+    <script defer src="js/ie.js"></script>
+    <script defer src="js/main.js"></script>
+    <script>
+        $(function(){
+            let num=0;
+            let imageName = [slide01,slide02,slide03,slide04];
+            $('.inner')
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#css&jquery">CSS&JQUERY</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                </ul>
+            </div>
+            <div id="home" class="header_title">
+                <h1 class="title"> PORTFOLIO</h1>
+                <h3>안녕하세요 김수민의 웹포트폴리오에 오신걸 환영합니다.</h3>
+            </div>
+        </div>
+            <main>
+                <section id="css&jquery">
+                    <img src="img/maccosmatic.png" alt="">
+                    <input type="checkbox" id="popup">
+                    <label for="popup">View</label>
+                    <div>
+                        <div>
+                            <img src="img/maccosmatic.png" alt="">
+                            <a href="maccosmatic/maccosmatic.html">홈페이지로 이동</a>
+                            <label for="popup"></label>
+                        </div>
+                        <label for="popup"></label>
+                    </div>
+                    <img src="img/jquery.png" alt="">
+                    <input type="checkbox" id="popup2">
+                    <label for="popup2">View</label>
+                    <div>
+                        <div>
+                            <img src="img/jquery.png" alt="">
+                            <a href="jquery/index.html">홈페이지로 이동</a>
+                            <label for="popup2"></label>
+                        </div>
+                        <label for="popup2"></label>
+                    </div>
+                </section>  
+                
+            </main>
+            <div id="gallery" class="slidebox">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide04">
+                <ul class="slidelist">
+                    <li class="slideitem">
+                        <div>
+                            <label for="slide04" class="left"></label>
+                            <label for="slide02" class="right"></label>
+                            <a><img src="./img/img-1.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="slideitem">
+                        <div>
+                            <label for="slide01" class="left"></label>
+                            <label for="slide03" class="right"></label>
+                            <a><img src="./img/img-2.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="slideitem">
+                        <div>
+                            <label for="slide02" class="left"></label>
+                            <label for="slide04" class="right"></label>
+                            <a><img src="./img/img-3.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="slideitem">
+                        <div>
+                            <label for="slide03" class="left"></label>
+                            <label for="slide01" class="right"></label>
+                            <a><img src="./img/img-4.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        <!-- <div id="gallery">
+            <h4>GALLERY</h4>
+                <div class="gallery_box">
+                    <div class="image"><img src="img/img-1.png" alt=""></div>
+                    <div class="image"><img src="img/img-2.png" alt=""></div>
+                    <div class="image"><img src="img/img-3.png" alt=""></div>
+                    <div class="image"><img src="img/img-4.png" alt=""></div>
+                    <div class="image"><img src="img/img-5.png" alt=""></div>
+                    <div class="image"><img src="img/img-6.png" alt=""></div>
+        </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="img/img-1.png" alt="">
+            </div>
+        </div> -->
+        <!-- <script>
+            // gallery 클릭했을 때 나오는 화면
+            document.querySelectorAll('.gallery_box img').forEach(image =>{
+                image.onclick = () =>{
+                    document.querySelector('.popup-image').style.display = 'block';
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                }
+            });
+            document.querySelector('.popup-image span').onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'none';
+            };
+        </script> -->
+        <div class="footer">
+            <a href="#">TOP</a>
+        </div>
+    </div>
+</body>
+</html> 
